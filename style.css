@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+
+*{
+    font-family: 'Nunito',sans-serif;
+    margin: 0;
+    padding:10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    
+}
+
+html{
+
+font-size: 55%;
+
+
+}
+/* header */
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem .5rem;
+    z-index: 2;
+    background: linear-gradient(90deg, rgba(18,47,39,0.9557072829131653) 1%, rgba(24,232,225,0.5971638655462185) 60%, rgba(34,97,106,0.8884803921568627) 100%);
+}
+
+.header .logo img{
+ height: 10rem;
+ border-radius: 50%;
+}
+
+.header .navbar #close{
+    display: none;
+}
+
+.header .navbar a{
+     font-size: 2rem;
+     margin-right: 2rem;
+     color: antiquewhite;
+
+
+}
+.header .navbar a:hover{
+    color: crimson;
+}
+
+.header #menu{
+    display: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(18,47,39,0.9557072829131653) 1%, rgba(24,232,225,0.5971638655462185) 60%, rgba(34,97,106,0.8884803921568627) 100%);
+  }
+  .home .content{
+    flex: 1 2 80rem;
+    
+  }
+  .home .content .title{
+    font-size: 6rem;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip .5s ;
+    
+  }.home .content .title span{
+    text-transform: uppercase;
+    color: #7c1001;
+  }
+  .home .content .description{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
+  }
+  .home .content .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    align-items: center;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: #7c1001;
+    cursor: pointer;
+  }
+    .home .content .btn:hover{
+        letter-spacing: .2rem;
+    }
+    .home .image{
+        flex: 1 1 60rem;
+      } 
+      .home .image img{
+        animation:shake 1.5s infinite;
+        width: 100%;
+      }
+      @media (max-width:991px){
+        html{
+          font-size: 55%;
+        }
+      
+        .header{
+          padding: 2rem;
+        }
+      
+        section{
+          padding: 2rem;
+        }
+      
+      }
+      @media (max-width:991px){
+        html{
+          font-size: 55%;
+        }
+      
+        .header{
+          padding: 2rem;
+        }
+      
+        section{
+          padding: 2rem;
+        }
+      
+      }
+
+      @keyframes shake {
+        0% { transform: translateX(0) }
+        25% { transform: translateX(5px) }
+        50% { transform: translateX(-5px) }
+        75% { transform: translateX(5px) }
+        100% { transform: translateX(0) }
+      }
+
+      @keyframes flip {
+        0%,80% {
+          transform: rotateY(360deg) 
+        }
+      }
